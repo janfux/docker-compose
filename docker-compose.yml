@@ -7,7 +7,6 @@ services:
       - ${LANCACHE_IP}:80:80/tcp
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-    env_file: .env
   dns:
     image: steamcache/steamcache-dns:latest
     env_file: .env
